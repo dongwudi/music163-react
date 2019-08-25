@@ -18,28 +18,28 @@ export const subs = [
     component: DiscoverCom
   },
   {
-    path: "/discover/toplist",
+    path: "/discover/toplist/",
     name: "排行榜",
     component: ToplistCom
   },
   {
-    path: "/discover/playlist",
+    path: "/discover/playlist/",
     name: "歌单",
     component: PlaylistCom,
     icon: "white"
   },
   {
-    path: "/discover/djradio",
+    path: "/discover/djradio/",
     name: "主播电台",
     component: DjradioCom
   },
   {
-    path: "/discover/artist",
+    path: "/discover/artist/",
     name: "歌手",
     component: ArtistCom
   },
   {
-    path: "/discover/album",
+    path: "/discover/album/",
     name: "新碟上架",
     component: AlbumCom
   }
