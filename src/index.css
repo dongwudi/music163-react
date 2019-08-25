@@ -130,3 +130,22 @@ button:focus {
 .f-r-white-icon {
   background: url("./assets/images/white-r-icon@3x.png");
 }
+
+.f-thide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.f-fs1 {
+  font-size: 14px;
+}
+
+.g-ft {
+  position: relative;
+  height: 148px;
+  overflow: hidden;
+  border-top: 1px solid #d3d3d3;
+  background: #f2f2f2;
+}

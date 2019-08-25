@@ -26,6 +26,8 @@ const cRoutes = (
         <Route component={NotMatch} />
       </Switch>
     </Suspense>
+    {/* footer */}
+    <div className="g-ft"></div>
   </Router>
 );
 

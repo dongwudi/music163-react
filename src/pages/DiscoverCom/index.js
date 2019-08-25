@@ -3,6 +3,7 @@ import SubCom from "@/components/SubCom";
 import BannerCom from "./BannerCom";
 import RcmdCom from "./RcmdCom";
 import NewCom from "./NewCom";
+import BillCom from './BillCom';
 import "./index.scss";
 
 export default () => {
@@ -16,6 +17,7 @@ export default () => {
             <div className="g-wrap3">
               <RcmdCom />
               <NewCom />
+              <BillCom />
             </div>
           </div>
         </div>

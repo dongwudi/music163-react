@@ -90,6 +90,10 @@
       margin: 212px 0 0 19px;
       background-position: 0 9999px;
       text-indent: -9999px;
+      &:hover {
+        background-position: 0 -340px;
+        text-decoration: none;
+      }
     }
     p {
       margin: 10px auto;
