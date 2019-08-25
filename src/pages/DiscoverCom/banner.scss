@@ -1,0 +1,116 @@
+.n-ban .shadow,
+.n-ban .shadowr,
+.n-ban .ban .btnl,
+.n-ban .ban .btnr,
+.n-ban .dots .pg {
+  background: url("../../assets/images/banner.png") 0 9999px no-repeat;
+}
+.n-ban {
+  background: rgb(123, 182, 177);
+  .wrap {
+    position: relative;
+    width: 982px;
+    height: 336px;
+    margin: 0 auto;
+  }
+  .ban {
+    width: 982px;
+    height: 336px;
+    z-index: 10;
+    img {
+      display: block;
+      width: 730px;
+      height: 336px;
+      -webkit-backface-visibility: hidden;
+    }
+    .btnl,
+    .btnr {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -31px;
+      width: 37px;
+      height: 63px;
+      text-indent: -9999px;
+      cursor: pointer;
+    }
+    .btnl {
+      left: -68px;
+      background-position: 0 -360px;
+      _background-position: 0 0;
+      &:hover {
+        background-position: 0 -430px;
+        _background-position: 0 0;
+      }
+    }
+    .btnr {
+      right: -68px;
+      background-position: 0 -508px;
+      _background-position: 0 0;
+      &:hover {
+        background-position: 0 -578px;
+        _background-position: 0 0;
+      }
+    }
+    .dots {
+      position: absolute;
+      top: 310px;
+      left: 0;
+      width: 730px;
+      height: 20px;
+      text-align: center;
+      .pg {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-position: 3px -343px;
+        _background-position: 0 0;
+        cursor: pointer;
+        &.active,
+        &:hover {
+          background-position: -16px -343px;
+          _background-position: 0 0;
+        }
+      }
+    }
+  }
+  .download {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    right: -1px;
+    width: 254px;
+    height: 336px;
+    background: url("../../assets/images/download.png") no-repeat 0 0;
+    .btn {
+      background: url("../../assets/images/download.png") no-repeat 0 0;
+      display: block;
+      width: 215px;
+      height: 56px;
+      margin: 212px 0 0 19px;
+      background-position: 0 9999px;
+      text-indent: -9999px;
+    }
+    p {
+      margin: 10px auto;
+      text-align: center;
+      color: #8d8d8d;
+    }
+    .shadow,
+    .shadowr {
+      display: block;
+      _display: none;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 20px;
+      height: 336px;
+      background-position: -1px 0;
+    }
+    .shadowr {
+      left: auto;
+      right: -20px;
+      background-position: -20px 0;
+    }
+  }
+}
