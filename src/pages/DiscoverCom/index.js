@@ -3,7 +3,10 @@ import SubCom from "@/components/SubCom";
 import BannerCom from "./BannerCom";
 import RcmdCom from "./RcmdCom";
 import NewCom from "./NewCom";
-import BillCom from './BillCom';
+import BillCom from "./BillCom";
+import MyInfo from "./MyInfo";
+import SingerCom from "./SingerCom";
+import DjCom from "./DjCom";
 import "./index.scss";
 
 export default () => {
@@ -21,7 +24,11 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="g-sd1"></div>
+        <div className="g-sd1">
+          <MyInfo />
+          <SingerCom />
+          <DjCom />
+        </div>
       </div>
     </>
   );

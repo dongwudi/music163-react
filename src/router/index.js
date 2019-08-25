@@ -5,6 +5,8 @@ import { top, subs } from "./config";
 import { NotMatch } from "./loadCom";
 import TopCom from "@/components/TopCom";
 import Spin from "@/components/Spin";
+import BackTop from "@/components/BackTop";
+import Footer from "@/components/Footer";
 
 // _routes
 let _routes = [];
@@ -26,8 +28,8 @@ const cRoutes = (
         <Route component={NotMatch} />
       </Switch>
     </Suspense>
-    {/* footer */}
-    <div className="g-ft"></div>
+    <Footer />
+    <BackTop />
   </Router>
 );
 

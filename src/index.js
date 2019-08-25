@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import "./index.css";
+import "./assets/scss/index.scss";
 import cRoutes from "@/router";
 
 import { Provider } from "react-redux";
