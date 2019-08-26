@@ -2,7 +2,7 @@ import axios from "axios";
 import qs from "qs";
 
 let axiosServer = axios.create({
-  baseURL: rocess.env.NODE_ENV === "development" ? "http://localhost:4000/" : "",
+  baseURL: process.env.NODE_ENV === "development" ? "" : "",
   timeout: 5000,
   withCredentials: true,
   transformRequest: [

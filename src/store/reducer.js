@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux-immutable';
-import TopComReducer from '@/components/TopCom/store'
+import DiscoverReducer from '@/pages/DiscoverCom/store/reducer'
 
 const rootReducer = combineReducers({
-  topnav: TopComReducer
+  discover: DiscoverReducer
 });
 
 export default rootReducer;
