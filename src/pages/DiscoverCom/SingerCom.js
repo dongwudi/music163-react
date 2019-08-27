@@ -1,81 +1,42 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-class SingerCom extends PureComponent {
-  render() {
-    return (
-      <div className="n-singer">
-        <h3 className="v-hd3">
-          <span className="f-fl">入驻歌手</span>
-          <Link to="/discover/artist/signed/" className="more s-fc3">
-            查看全部 &gt;
-          </Link>
-        </h3>
-        <ul className="n-enter f-cb">
-          <li>
-            <Link
-              to="https://music.163.com/user/home?id=29879272"
-              className="itm f-tdn"
-            >
-              <div className="head">
-                <img
-                  className="j-img"
-                  src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62"
-                  alt=""
-                />
-              </div>
-              <div className="ifo">
-                <h4>
-                  <span className="nm f-fs1 f-ib f-thide">张惠妹aMEI</span>
-                </h4>
-                <p className="f-thide s-fc3">台湾歌手张惠妹</p>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://music.163.com/user/home?id=29879272"
-              className="itm f-tdn"
-            >
-              <div className="head">
-                <img
-                  className="j-img"
-                  src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62"
-                  alt=""
-                />
-              </div>
-              <div className="ifo">
-                <h4>
-                  <span className="nm f-fs1 f-ib f-thide">张惠妹aMEI</span>
-                </h4>
-                <p className="f-thide s-fc3">台湾歌手张惠妹</p>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://music.163.com/user/home?id=29879272"
-              className="itm f-tdn"
-            >
-              <div className="head">
-                <img
-                  className="j-img"
-                  src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62"
-                  alt=""
-                />
-              </div>
-              <div className="ifo">
-                <h4>
-                  <span className="nm f-fs1 f-ib f-thide">张惠妹aMEI</span>
-                </h4>
-                <p className="f-thide s-fc3">台湾歌手张惠妹</p>
-              </div>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    );
-  }
-}
+const SingerCom = ({ singerlist }) => (
+  <div className="n-singer">
+    <h3 className="v-hd3">
+      <span className="f-fl">入驻歌手</span>
+      <Link to="/discover/artist/signed/" className="more s-fc3">
+        查看全部 &gt;
+      </Link>
+    </h3>
+    <ul className="n-enter f-cb">
+      {singerlist
+        ? singerlist.map(item => (
+            <li key={item.accountId}>
+              <Link
+                to={`/user/home?id=${item.accountId}`}
+                className="itm f-tdn"
+              >
+                <div className="head">
+                  <img className="j-img" src={item.picUrl} alt="" />
+                </div>
+                <div className="ifo">
+                  <h4>
+                    <span className="nm f-fs1 f-ib f-thide">{item.name}</span>
+                  </h4>
+                  <p className="f-thide s-fc3">{item.name}</p>
+                </div>
+              </Link>
+            </li>
+          ))
+        : null}
+    </ul>
+  </div>
+);
 
-export default SingerCom;
+const mapStateToProps = state => ({
+  singerlist: state.getIn(["discover", "singerlist"])
+});
+
+export default connect(mapStateToProps)(SingerCom);

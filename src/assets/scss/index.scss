@@ -225,9 +225,25 @@ button:focus {
 .s-bg-10:hover {
   background-position: -300px -235px;
 }
+.s-bg-11 {
+  background-position: -267px -268px;
+}
+.s-bg-11:hover {
+  background-position: -267px -288px;
+}
+.s-bg-12 {
+  background-position: -297px -268px;
+}
+.s-bg-12:hover {
+  background-position: -297px -288px;
+}
 .g-bd1 {
   background: url("../images/wrap1.png") repeat-y 100% 100%;
 }
+.n-bilst ol li * {
+  vertical-align: middle;
+}
+
 .v-hd2 {
   height: 33px;
   padding: 0 10px 0 34px;
@@ -448,7 +464,21 @@ a.s-fc3:hover {
   font-size: 100%;
   font-style: normal;
 }
-
+.u-icn,
+.u-icn2,
+.u-icn3 {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.u-icn-81 {
+  width: 13px;
+  height: 13px;
+  background-position: 0 -700px;
+}
+.u-icn-81:hover {
+  background-position: -22px -700px;
+}
 .g-sd1 {
   position: relative;
   float: right;

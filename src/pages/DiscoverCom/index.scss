@@ -66,10 +66,21 @@
     cursor: pointer;
   }
   .roll {
+    position: relative;
+    top: 0;
+    left: 0;
     float: left;
     width: 645px;
     height: 180px;
     overflow: hidden;
+    .roll-w {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s;
+      width: 645px;
+      height: 180px;
+    }
   }
   ul {
     position: absolute;
@@ -141,10 +152,34 @@
     height: 319px;
     margin-left: 50px;
     line-height: 32px;
+    .oper {
+      display: none;
+      float: right;
+      width: 82px;
+      margin-top: 7px;
+      i {
+        float: left;
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .u-icn-81 {
+        margin: 2px 6px 0 0;
+      }
+    }
     li {
       height: 32px;
       &.js-dis .nm {
         color: #bbb;
+      }
+      &:hover {
+        .oper {
+          display: block;
+        }
+        .nm {
+          width: 96px;
+        }
       }
     }
     .no {
