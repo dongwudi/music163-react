@@ -3,7 +3,7 @@
 ## start
 
 ```
-$ git clone https://github.com/dongwudi/music163-react.git
+$ git clone https://github.com/liulxin/music163-react.git
 
 $ cd music163-react
 
